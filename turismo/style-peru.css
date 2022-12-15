@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;   
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+
+}
+
+nav {
+    position: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
+    box-shadow: #00000014 0 1px;
+}
+
+#local, #info{
+    display: flex;
+    text-align: justify;
+    margin: 0;
+}
+
+#local {
+    font-weight: 700;
+    margin-top: 10px;
+    margin-left: 2%;
+}
+
+#info {
+    color: #545E56;
+    font-weight: 400;
+    font-size: medium;
+    margin-left: 2%;
+}
+
+#botao {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    margin-top: -50px;
+    margin-right: 50px;
+    float: right;
+}
+
+.botaoa {
+    cursor: pointer;
+    border: none;
+    padding: 5px 8px 0 8%;
+    background-color: #8EA604;
+    color: #ffffff;
+    box-shadow: 1px 1px 3px 1px #cad0d3;
+    font-size: 20px;
+    width: 110px;
+    margin: auto;
+}
+
+main{
+    height: 520px;
+    width: 935px;
+    border-radius: 20px;
+    border: solid;
+    border-color: #f8fcff;
+    overflow: hidden;
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 2px 10px #b0bbbb;
+}
+
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide{
+    width: 20%;
+    transition: 0.5s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+.navigation{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.bar{
+    width: 50px;
+    height: 17px;
+    border: 3px solid #ffffff;
+    margin: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.bar:hover{
+    background-color: #ffffffb4;
+}
+
+input{
+    display: none;
+}
+
+
+h1{
+    text-align: center;
+    color: #8EA604;
+    margin-top: 0.8%;
+}
+
+h2{
+    text-align: center;
+    margin-top: 70px;
+}
+
+.sobre{
+    text-align: center; 
+    color: #545E56;   
+}
+
+article{
+    column-count: 2;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 100px;
+    text-align: center;
+    text-align: justify;
+    text-indent: 15px;
+}
+
+#descricao{
+    padding-top: 700px;
+    max-width: 100%; 
+    min-width: 100%;
+    color: #545E56;
+}
+
+button{
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+
+a{
+    color: #000000;
+    text-decoration: none;
+    width: 50px;
+    font-size: 30px;
+}
+
+
+/* PASSAR SLIDES / IMAGENS */
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+    margin-left: -20%;
+}
+
+#slide3:checked ~ .s1{
+    margin-left: -40%;
+}
+
+#slide4:checked ~ .s1{
+    margin-left: -60%;
+}
